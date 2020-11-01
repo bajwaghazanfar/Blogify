@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://Gaz:daddy100@nodepractise.2g4ux.mongodb.net/NodePractise?retryWrites=true&w=majority",
+    "jwtSecret":"sl_myjwtsecret"    
+}
