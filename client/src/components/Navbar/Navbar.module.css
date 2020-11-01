@@ -1,0 +1,121 @@
+nav{
+    background:#1b1b1b;
+    color: white;
+    width: 100%;
+    box-shadow: 5px 5px 18px -2px #000000;
+}
+nav::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li img{
+    display: inline-block;
+    position: relative;
+    max-width: 40px;
+    top: 9px;
+    border-radius: 50%;
+}
+nav ul  li{
+    float: left;
+    display: inline-block;
+    background: #1b1b1b;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+
+}
+nav ul li a:hover{
+
+}
+nav ul ul{
+    position: absolute;
+    top: 120px;
+    left: -5px;
+    visibility: hidden;
+    opacity: 0; 
+    transition: top .3s;
+}
+nav ul li:hover>ul{
+    top:75px;
+    opacity: 1;
+    z-index: 20;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0,.3);
+}
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+.Logo{
+    float: left;
+    color: white;    
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left:60px ;
+}
+
+@media (max-width:570px){
+    nav{
+        width: 100vw;
+    
+    }
+    nav ul ul{
+        position: absolute;
+        margin-top: -32px;
+        left: 50px;
+        opacity: 1;
+        visibility: hidden;
+        opacity: 0; 
+      }
+    nav ul ul li{
+        line-height: 50px;
+    }
+    .Logo{
+        
+        display: block;
+        position: absolute;
+    }
+    nav ul{
+        float: right;
+        width: 200px;
+        display: flex;
+        align-items: initial;
+    }
+    nav ul li{
+        float: right;
+    }
+    nav ul li a{
+        line-height: 0px;
+        font-size: 18px;
+        position: relative;
+        left: 20px;
+    }
+    nav ul{
+        display: inline-block;
+    }
+    .Logo{
+        padding: 0;
+    }
+}

@@ -1,0 +1,214 @@
+.errorContainer{
+    position: absolute;
+    background-color: red;
+    color: white;
+    left: 80%;
+    top: 10px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow:
+    0px 3px 5px -1px rgba(0,0,0,0.2),
+     0px 6px 10px 0px rgba(0,0,0,0.14),
+      0px 1px 18px 0px rgba(0,0,0,0.12);
+    padding: 5px;
+    border-radius: 3px;
+}
+.errorModal{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.errorModal i{
+    text-align: center;
+    line-height: 50px;
+
+}
+
+
+.Wrapper{
+    position: relative;
+    width: 100%;
+    min-height:100vh ;
+    background-color: #fff;
+    overflow: hidden;
+    
+}
+.Wrapper:before{
+    content: "";
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg,#4481eb,#04befe);
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    z-index: 6;
+}
+.FormContainer{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.Form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    padding:  0 5rem;
+    overflow: hidden;
+}
+.Form h1{
+    font-size: 45px;
+    font-weight: 1000;
+    color: #444;
+}
+.Input{
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 .4rem;
+}
+.Input i{
+    text-align: center;
+    line-height: 50px;
+    color: #acacac;
+    font-size: 1.1rem;
+}
+.Input input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    color: #333;
+}
+.Input input::placeholder{
+    color:#aaa;
+    font-weight: 500;
+}
+.FormContainer button{
+    width: 150px;
+    height: 49px;
+    border: none;
+    outline: none;
+    border-radius: 49px;
+    cursor: pointer;
+    background-color: #5995fd;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0 ;
+    transition: .5s;
+}
+.FormContainer button:hover{
+    background-color:#4d84e2;
+}
+.LoginPanel{
+    position: absolute;
+    pointer-events: none;
+    z-index: 7;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.PanelContent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    
+} 
+.PanelText{
+    position: relative;
+    margin-top: 50px;
+    color: #fff;
+}
+.PanelText h3{
+    font-weight: 600;
+    line-height: 1;
+    font-size: 1.5rem;
+}
+.PanelText p{
+    font-size: 0.95rem;
+    line-height: 0.7rem 0;
+}
+.PanelText .PanelBtn{
+    background-color: transparent;
+    border: 2px solid white;
+    pointer-events: all;
+}
+.image{
+    width: 80%;
+}
+@media (max-width:570px){
+    .image{
+        display: none;
+    }
+    .Wrapper{
+        min-height: 570px;
+        height: 100vh;       
+        overflow-y: scroll; 
+    }
+    .Wrapper:before{
+        width: 1500px;
+        height: 1500px;
+        left: 30%;
+        bottom: 60%;
+        transform: translateX(-50%);
+        right: initial;
+        top: initial;
+    }
+    .Form{
+        width: 100%;
+        left: 50%;
+        top: 85%;
+    }
+    .PanelContent{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        top: 5%;
+    } 
+    .PanelText {
+        position: relative;
+        margin-top: 0px;
+        color: #fff;
+    }
+    .PanelText h3{
+        font-size: 1.5rem;
+    }
+    .PanelText p{
+        font-size: 0.8rem;
+    }
+    .PanelBtn{
+        width: 10px;
+
+    }
+}
+
+
+
+
+
+
+
+

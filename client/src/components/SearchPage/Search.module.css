@@ -1,0 +1,33 @@
+.wRapper{
+    background-image: url('./search.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    opacity: .7;
+    padding: 150px;
+    
+}
+
+.input{
+    padding:  15px;
+    border-radius: 20px;  
+    width: 40vw;
+    border: none;
+    background: white;
+    outline: none;
+    justify-content: center;
+    position: relative;
+    left: 20%;
+    transition: ease-in-out,width .35s ease-in-out,left .35s ease-in-out;
+    font-weight: 800;
+    font-size: medium;
+}
+
+
+@media (max-width:570px){
+    .input{
+        margin: 0 auto;
+        width: 50vw;
+        left: -50px
+    }
+}

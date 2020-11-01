@@ -1,0 +1,178 @@
+.Icons {
+    display: flex;
+    justify-content: center;
+        justify-content: space-around;
+}
+
+.Icons button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.Delete{
+    position: absolute;
+    width: 800px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+    
+
+}
+.progressIcon{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+}
+.Icons button:focus{
+    outline: none;
+}
+.Icons span{
+    display: flex;
+    flex-direction: row;
+
+}
+.progress-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+  }
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 900px;
+    max-width: 900px;
+
+    
+}
+.container h1{
+    text-align: left;
+}
+.blogTitle{
+    position: relative;
+    left: 40%;
+    border-bottom: 2px solid currentColor;
+    width:fit-content;
+    
+}
+.BlogBody{
+    display: block;
+    width: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.Loader{
+    position: relative;
+   
+    text-align: center;
+}
+.comments{
+    
+    background: rgba(255, 255, 255, 0.788);
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+    border: 1px solid rgba(0,0,0,.09);
+    border-radius: 3px;
+    max-width: 800px;
+    margin-bottom: 30px;
+  
+}
+.postedBy{
+    display:flex;
+    text-align: center;
+
+}
+.postedBy,.comments h6,.comments h4{
+    margin-left: 10px;
+}
+.postedBy h5{
+    position: relative;
+    left: 15px;
+}
+.comments h6{
+    position: relative;
+    top: -40px;
+    max-width: 200px;
+    color: rgba(0,0,0,.54);
+    font-size: 12px;
+}
+.comments p{
+    position: relative;
+    top: -50px;
+    color: #404040;
+    width:790px;
+    word-wrap: break-word;
+}
+.addComment{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; 
+    max-width: fit-content;
+}
+
+
+.postedBy img{
+    text-align: center;
+    height: 36px;
+    width: auto;
+    vertical-align: middle;
+    position: relative;
+    top: 10px;
+    border-radius: 50%;
+}
+.CoverPhoto{
+    width: 100%;
+  
+}
+.CoverPhoto img{
+    max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}
+.BlogBody{
+    width: 100%;
+}
+.addComment input{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+}
+.addComment button{
+    background-color: #3A62E1;
+    color: white;
+}
+.addComment button:hover{
+    background-color: #3A62E1;
+}
+@media (max-width:570px){
+    .CoverPhoto video{
+        max-width: 100vw;
+    }
+    .container{
+        max-width: 100vw;
+    }
+    .CoverPhoto{
+        width: 100vw;
+    }
+    .BlogBody{
+        width: 100vw;
+    }
+    .comments {
+        width: 100vw;
+    }
+    .comments p{
+        max-width: 100vw;
+    }
+    .Delete{
+        width: 100vw;
+    }
+}

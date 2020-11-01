@@ -1,0 +1,91 @@
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-areas: "image" "text" "user" "stats";
+
+    margin-bottom: 20px;
+    max-width: fit-content;
+    
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+
+  
+}
+.media img{
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.media video{
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 300px;
+
+}
+.cardText{
+    grid-area: text;
+    margin: 5px;
+} 
+.cardText h2{
+    font-size: 30px;
+    font-weight: 1000;
+}
+.cardText p{
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.user{
+    grid-area: user;
+}
+.stats{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(255, 7, 110);
+}
+.stats .stat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+
+}
+.stats .type{
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.stats .value{
+    font-size: 22px;
+    font-weight: 1000;
+}
+.statBorder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    border-left: 1px solid rgb(172, 26, 87);
+    border-right: 1px solid rgb(172, 26, 87);
+
+}
+.value sup{
+    font-size: 12px;
+}
+@media (max-width:570px){
+    .card{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
